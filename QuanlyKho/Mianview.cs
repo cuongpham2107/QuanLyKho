@@ -45,17 +45,30 @@ namespace QuanlyKho
             }
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            ThemSanPham themSanPham = new ThemSanPham();
-            themSanPham.ShowDialog();
-        }
 
         private void button2_Click(object sender, EventArgs e)
         {
             Quanlysanpham quanlysanpham = new Quanlysanpham();
             quanlysanpham.ShowDialog();
            
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            Quanlykho quanlykho = new Quanlykho();
+            quanlykho.ShowDialog();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Quanlydanhmuc quanlydanhmuc = new Quanlydanhmuc();
+            quanlydanhmuc.ShowDialog();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            NhanVien nhanVien = new NhanVien();
+            nhanVien.ShowDialog();
         }
     }
 }

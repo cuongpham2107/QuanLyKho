@@ -6,9 +6,6 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuanlyKho", "QuanlyKho\QuanlyKho.csproj", "{DAE9A1C4-6F31-4B64-82CA-0FEF3BEF6C6D}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "sql", "sql", "{224A9D56-B80A-4FA6-9B6D-F52CC08A69AF}"
-	ProjectSection(SolutionItems) = preProject
-		QuanlyKho\Quanlykho.sql = QuanlyKho\Quanlykho.sql
-	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

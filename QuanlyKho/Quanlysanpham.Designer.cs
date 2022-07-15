@@ -32,6 +32,8 @@ namespace QuanlyKho
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.cbCategory = new System.Windows.Forms.ComboBox();
             this.txtSalePrice = new System.Windows.Forms.TextBox();
@@ -47,10 +49,6 @@ namespace QuanlyKho
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.label8 = new System.Windows.Forms.Label();
-            this.txtID = new System.Windows.Forms.TextBox();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -65,7 +63,7 @@ namespace QuanlyKho
             this.groupBox2.Size = new System.Drawing.Size(802, 846);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "groupBox2";
+            this.groupBox2.Text = "Danh sach san pham";
             // 
             // dataGridView1
             // 
@@ -78,8 +76,6 @@ namespace QuanlyKho
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.txtID);
-            this.groupBox1.Controls.Add(this.label8);
             this.groupBox1.Controls.Add(this.button3);
             this.groupBox1.Controls.Add(this.button2);
             this.groupBox1.Controls.Add(this.button1);
@@ -104,6 +100,28 @@ namespace QuanlyKho
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Them san pham";
+            // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.IndianRed;
+            this.button3.Location = new System.Drawing.Point(321, 571);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(106, 37);
+            this.button3.TabIndex = 16;
+            this.button3.Text = "Xoa san pham";
+            this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.button2.Location = new System.Drawing.Point(174, 571);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(106, 37);
+            this.button2.TabIndex = 15;
+            this.button2.Text = "Sua san pham";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
@@ -148,7 +166,7 @@ namespace QuanlyKho
             // 
             // txtName
             // 
-            this.txtName.Location = new System.Drawing.Point(145, 64);
+            this.txtName.Location = new System.Drawing.Point(145, 41);
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(282, 20);
             this.txtName.TabIndex = 9;
@@ -163,9 +181,9 @@ namespace QuanlyKho
             // 
             // rtxtDesc
             // 
-            this.rtxtDesc.Location = new System.Drawing.Point(145, 101);
+            this.rtxtDesc.Location = new System.Drawing.Point(145, 67);
             this.rtxtDesc.Name = "rtxtDesc";
-            this.rtxtDesc.Size = new System.Drawing.Size(282, 44);
+            this.rtxtDesc.Size = new System.Drawing.Size(282, 78);
             this.rtxtDesc.TabIndex = 7;
             this.rtxtDesc.Text = "";
             // 
@@ -208,7 +226,7 @@ namespace QuanlyKho
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(20, 104);
+            this.label3.Location = new System.Drawing.Point(20, 70);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(83, 13);
             this.label3.TabIndex = 2;
@@ -226,49 +244,11 @@ namespace QuanlyKho
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(20, 67);
+            this.label1.Location = new System.Drawing.Point(20, 41);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(75, 13);
             this.label1.TabIndex = 0;
             this.label1.Text = "Ten san pham";
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.button2.Location = new System.Drawing.Point(174, 571);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(106, 37);
-            this.button2.TabIndex = 15;
-            this.button2.Text = "Sua san pham";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.Color.IndianRed;
-            this.button3.Location = new System.Drawing.Point(321, 571);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(106, 37);
-            this.button3.TabIndex = 16;
-            this.button3.Text = "Xoa san pham";
-            this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(20, 32);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(65, 13);
-            this.label8.TabIndex = 17;
-            this.label8.Text = "Id san pham";
-            // 
-            // txtID
-            // 
-            this.txtID.Location = new System.Drawing.Point(145, 29);
-            this.txtID.Name = "txtID";
-            this.txtID.Size = new System.Drawing.Size(282, 20);
-            this.txtID.TabIndex = 18;
             // 
             // Quanlysanpham
             // 
@@ -309,7 +289,5 @@ namespace QuanlyKho
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txtID;
-        private System.Windows.Forms.Label label8;
     }
 }

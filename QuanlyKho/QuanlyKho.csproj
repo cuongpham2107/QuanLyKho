@@ -53,22 +53,37 @@
     <Compile Include="Mianview.Designer.cs">
       <DependentUpon>Mianview.cs</DependentUpon>
     </Compile>
+    <Compile Include="NhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NhanVien.Designer.cs">
+      <DependentUpon>NhanVien.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Quanlydanhmuc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Quanlydanhmuc.Designer.cs">
+      <DependentUpon>Quanlydanhmuc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Quanlykho.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Quanlykho.Designer.cs">
+      <DependentUpon>Quanlykho.cs</DependentUpon>
+    </Compile>
     <Compile Include="Quanlysanpham.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Quanlysanpham.Designer.cs">
       <DependentUpon>Quanlysanpham.cs</DependentUpon>
     </Compile>
-    <Compile Include="ThemSanPham.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ThemSanPham.Designer.cs">
-      <DependentUpon>ThemSanPham.cs</DependentUpon>
-    </Compile>
     <EmbeddedResource Include="Mianview.resx">
       <DependentUpon>Mianview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NhanVien.resx">
+      <DependentUpon>NhanVien.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -79,11 +94,14 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Quanlydanhmuc.resx">
+      <DependentUpon>Quanlydanhmuc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Quanlykho.resx">
+      <DependentUpon>Quanlykho.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Quanlysanpham.resx">
       <DependentUpon>Quanlysanpham.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ThemSanPham.resx">
-      <DependentUpon>ThemSanPham.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
